@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaruffiCoin</title>
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- INSTALL BOOTSTRAP ICONS NOT WORK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <header
+      class="w-100 d-flex flex-row justify-content-between p-2 index_header"
+    >
+      <div class="d-flex flex-row w-25 justify-content-start">
+        <h1 class="text-white">Baruffi'sCoin</h1>
+        <i class="bi bi-currency-bitcoin text-white h1"></i>
+      </div>
+      <div class="d-flex w-75 justify-content-end">
+        <button
+          id="aboutButton"
+          class="btn bg-primary pt-3 d-flex flex-row align-items-baseline ml-2"
+        >
+          <h2 class="text-white">About</h2>
+          <i class="bi bi-people-fill text-white h2 ml-2"></i>
+        </button>
+        <button
+          id="walletButton"
+          class="btn bg-primary pt-3 d-flex flex-row align-items-baseline ml-2"
+        >
+          <h2 class="text-white">Wallets</h2>
+          <i class="bi bi-wallet2 text-white h2 ml-2"></i>
+        </button>
+        <button
+          id="blockchainButton"
+          class="btn bg-primary pt-3 d-flex flex-row align-items-baseline ml-2"
+        >
+          <h2 class="text-white">Blockchain</h2>
+          <i class="bi bi-boxes text-white h2 ml-2"></i>
+        </button>
+        <button
+          id="accountButton"
+          class="btn bg-primary pt-3 d-flex flex-row align-items-baseline ml-2"
+        >
+          <h2 class="text-white">Account</h2>
+          <i class="bi bi-box-arrow-in-right text-white h2 ml-2"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="w-100 h-100">
+      <iframe
+        id="iframe"
+        class="w-100 h-100 border-0 index_iframe"
+        src="./html/about.html"
+        frameborder="0"
+      ></iframe>
+    </main>
+    <!--
+    <h2>Create a New Wallet</h2>
+    <form id="createWalletForm">
+      <button type="submit" class="btn btn-primary">Create Wallet</button>
+    </form>
+    <div id="walletInfo" class="mt-4"></div>
+
+    <h2>Access Your Wallet</h2>
+    <form id="accessWalletForm">
+      <div class="form-group">
+        <label for="walletPassword">Enter Password or Recovery Phrase:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="walletPassword"
+          placeholder="Enter your password or recovery phrase"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Access Wallet</button>
+    </form>
+    <div id="accessWalletInfo" class="mt-4"></div>
+
+    <h2>View Blockchain</h2>
+    <button id="viewBlockchain" class="btn btn-secondary">
+      View All Blocks
+    </button>
+    <div id="blockchainInfo" class="mt-4"></div>
+
+    <h3>View Specific Block</h3>
+    <form id="viewBlockForm">
+      <div class="form-group">
+        <label for="blockIndex">Enter Block Index:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="blockIndex"
+          placeholder="Enter block index"
+        />
+      </div>
+      <button type="submit" class="btn btn-info mt-2">View Block</button>
+    </form>
+    <div id="specificBlockInfo" class="mt-4"></div>
+
+    <h2>Add New Block</h2>
+    <form id="addBlockForm">
+      <div class="form-group">
+        <label for="blockData">Block Data:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="blockData"
+          placeholder="Enter data for the new block"
+        />
+      </div>
+      <button type="submit" class="btn btn-success mt-2">Add Block</button>
+    </form>
+    <div id="addBlockInfo" class="mt-4"></div>
+    -->
+  </body>
+</html>

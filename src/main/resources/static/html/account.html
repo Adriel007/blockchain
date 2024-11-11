@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaruffiCoin</title>
+    <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- INSTALL BOOTSTRAP ICONS NOT WORK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main
+      class="w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark"
+    >
+      <div>
+        <form action="" id="createWalletForm">
+          <div class="form-group">
+            <label for="walletName" class="text-white">Wallet Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="walletName"
+              placeholder="Enter a name"
+            />
+            <label for="walletPassword" class="text-white"
+              >Wallet Password:</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="walletPassword"
+              placeholder="Enter a strong password"
+            />
+          </div>
+          <button type="button" class="btn btn-success" id="createWallet">
+            Create Wallet
+          </button>
+          <button type="button" class="btn btn-success" id="accessWallet">
+            Access Wallet
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
