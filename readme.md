@@ -16,5 +16,6 @@ http://localhost:8080/node/
 - addBlock (POST)
 - isValid (GET)
 - blockchain (GET)
+- block/${index} (GET)
 
 ---

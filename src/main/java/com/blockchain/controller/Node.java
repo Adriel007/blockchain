@@ -5,6 +5,9 @@ import com.blockchain.services.Blockchain;
 import com.blockchain.services.Minerador;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+
 import java.util.List;
 
 @RestController
@@ -34,4 +37,14 @@ public class Node {
     public List<Block> getBlockchain() {
         return blockchain.getChain(); // Retorna a lista completa de blocos
     }
+
+    @GetMapping("/block/{index}")
+    public ResponseEntity<?> getBlockByIndex(@PathVariable int index) {
+        Block block = blockchain.getBlockByIndex(index);
+        if (block == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Bloco não encontrado para o índice fornecido.");
+        }
+        return ResponseEntity.ok(block);
+}
+
 }

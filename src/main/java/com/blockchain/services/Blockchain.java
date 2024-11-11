@@ -56,5 +56,11 @@ public class Blockchain {
         return true;
     }
 
+    public Block getBlockByIndex(int index) {
+        if (index < 0 || index >= chain.size()) {
+            return null;
+        }
+        return chain.get(index);
+    }
 
 }
