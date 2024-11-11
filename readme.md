@@ -16,9 +16,10 @@ cd ./blockchain
 ```
 
 ## EndPoints:
-http://localhost:8080/node/${controller}
+- http://localhost:8080/
+- http://localhost:8080/node/${Params}
 
-### Controllers:
+### Params:
 #### GET:
 - isValid
 - blockchain
@@ -27,5 +28,8 @@ http://localhost:8080/node/${controller}
 #### POST:
 - addBlock
 -- (String) data
+- addWallet
+-- (String) username
+-- (String) password
 
 ---
